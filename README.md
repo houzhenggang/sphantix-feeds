@@ -1,7 +1,7 @@
 Add this line to your feeds.conf.default.
 
 
-`src-git openwrtsop https://github.com/sphantix/openwrt-sop.git`
+`src-git openwrtsop https://github.com/sphantix/sphantix-feeds.git`
 
 And run:
 
