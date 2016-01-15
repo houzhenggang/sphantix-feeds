@@ -148,7 +148,8 @@ start()
 	# -----------------------------------------------------------------
 	###### Restart main 'dnsmasq' service if needed ######
 	if ls /var/etc/dnsmasq-go.d/* >/dev/null 2>&1; then
-		cat > /etc/dnsmasq.conf <<EOF
+        mkdir -p /tmp/dnsmasq.d
+        cat > /tmp/dnsmasq.d/dnsmasq-go.conf <<EOF
 conf-dir=/var/etc/dnsmasq-go.d
 EOF
 		/etc/init.d/dnsmasq restart
